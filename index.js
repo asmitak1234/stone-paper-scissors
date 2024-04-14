@@ -7,7 +7,7 @@ const userscore=document.querySelector("#user-score");
 const compscore=document.querySelector("#comp-score");
 
 const genCompChoice=()=>{
-    const options=["rock","paper","scissors"]
+    const options=["Rock","Paper","Scissors"]
    const raninx= Math.floor(Math.random()*3);
    return options[raninx];
 };
@@ -31,7 +31,7 @@ const showWinner=(userwin,userchoice,CompChoice)=>{
      {
         compScore++;
         compscore.innerText=compScore;
-        msg.innerText=`You Lose.${CompChoice} beats your ${userchoice}`;
+        msg.innerText=`You Lost.${CompChoice} beats your ${userchoice}`;
         msg.style.backgroundColor="red";
         msg.style.color="#081b31";
      }
@@ -46,17 +46,17 @@ const PlayGame=(userchoice)=>{
     else
     { 
         let userwin=true;
-        if(userchoice==="rock")
+        if(userchoice==="Rock")
         {
-           userwin=CompChoice==="paper"? false:true;
+           userwin=CompChoice==="Paper"? false:true;
         }
-        else if(userchoice==="paper")
+        else if(userchoice==="Paper")
         {
-           userwin=CompChoice==="scissors"? false:true;
+           userwin=CompChoice==="Scissors"? false:true;
         }
         else
         {
-           userwin=CompChoice==="rock"? false:true;
+           userwin=CompChoice==="Rock"? false:true;
         }
         showWinner(userwin,userchoice,CompChoice);
     }
