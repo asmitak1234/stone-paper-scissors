@@ -57,3 +57,37 @@ img{
     padding: 1rem;
     border-radius: 1rem;
 }
+@media(max-width:768px){
+    .choice{
+        height: 50px;
+        width: 50px;
+        padding: 0.6rem;
+    }
+    #user-score,#comp-score{
+        font-size: 1.9rem;
+    }
+    .sccore *{
+       font-size: 1.7rem
+    }
+    #msg{
+        font-size: 1.3rem;
+        padding: 0.8rem;
+    }
+}
+@media(max-width:480px){
+    .choice{
+        height: 50px;
+        width: 50px;
+        padding: 0.6rem;
+    }
+    #user-score,#comp-score{
+        font-size: 1.9rem;
+    }
+    .sccore *{
+        font-size: 1.7rem
+     }
+    #msg{
+        font-size: 1.3rem;
+        padding: 0.8rem;
+     }
+}
